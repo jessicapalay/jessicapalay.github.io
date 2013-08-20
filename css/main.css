@@ -62,5 +62,9 @@ p { margin: 1em 0; }
   padding: 0.5em 0;
   border-style: solid;
   border-width: 2px;
-  text-decoration: none;
+  text-decoration: none;2
+}
+
+.about-page, .work-page, .contact-page {
+  display: none;
 }
