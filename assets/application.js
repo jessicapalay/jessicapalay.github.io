@@ -5,6 +5,7 @@ $(document).ready(function() {
 	});
 
 	$("#about").click(function() {
+		$(".navigation-1").show();
 		$(".about-page").show();
 		$(".page").slideUp();
 		$(".navigation").slideUp();
@@ -13,6 +14,7 @@ $(document).ready(function() {
 	});
 
 	$("#work").click(function() {
+		$(".navigation-1").show();
 		$(".work-page").show();
 		$(".page").slideUp();
 		$(".navigation").slideUp();
@@ -21,6 +23,7 @@ $(document).ready(function() {
 	});
 
 	$("#contact").click(function() {
+		$(".navigation-1").show();
 		$(".contact-page").show();
 		$(".page").slideUp();
 		$(".navigation").slideUp();
@@ -37,24 +40,18 @@ $(document).ready(function() {
 
 	$(".about-1").click(function() {
 		$(".about-page").show();
-		$(".page").slideUp();
-		$(".navigation").slideUp();
 		$(".work-page").hide();
 		$(".contact-page").hide();
 	});
 
 	$(".work-1").click(function() {
 		$(".work-page").show();
-		$(".page").slideUp();
-		$(".navigation").slideUp();
 		$(".about-page").hide();
 		$(".contact-page").hide();	
 	});
 
 	$(".contact-1").click(function() {
 		$(".contact-page").show();
-		$(".page").slideUp();
-		$(".navigation").slideUp();
 		$(".about-page").hide();
 		$(".work-page").hide();		
 	});

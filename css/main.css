@@ -66,6 +66,10 @@ p { margin: 1em 0; }
   text-decoration: none;
 }
 
+.navigation-1 {
+  display: none;
+}
+
 .navigation-1 a {
   font-family: "Mission Gothic Thin";
   font-size: 20px;
@@ -92,6 +96,6 @@ p { margin: 1em 0; }
   margin-right:auto;
 }
 
-.about-page h1 {
+.about-page h1, .work-page h1, .contact-page h1 {
   margin: 0.5em 0 0.75em;
 }
