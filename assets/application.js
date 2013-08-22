@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	$(".navigation a").click(function(event) {
 		event.preventDefault();
-		console.log("click");
 	});
 
 	$("#about").click(function() {
@@ -35,25 +34,30 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$(".navigation-1 a").click(function(event) {
 		event.preventDefault();
-		console.log("click");
+		$anchor = $(this);
+		$(".about-page:visible, .work-page:visible, .contact.page:visible").fadeOut("fast", function() {
+				$selector = "." + anchor.attr("data-page")
+				$(selector).fadeIn("slow")
+			}
+		}
 	});
 
-	$(".about-1").click(function() {
-		$(".about-page").show();
-		$(".work-page").hide();
-		$(".contact-page").hide();
-	});
+	// $(".about-1").click(function() {
+	// 	$(".about-page").show();
+	// 	$(".work-page").hide();
+	// 	$(".contact-page").hide();
+	// });
 
-	$(".work-1").click(function() {
-		$(".work-page").show();
-		$(".about-page").hide();
-		$(".contact-page").hide();	
-	});
+	// $(".work-1").click(function() {
+	// 	$(".work-page").show();
+	// 	$(".about-page").hide();
+	// 	$(".contact-page").hide();	
+	// });
 
-	$(".contact-1").click(function() {
-		$(".contact-page").show();
-		$(".about-page").hide();
-		$(".work-page").hide();		
-	});
+	// $(".contact-1").click(function() {
+	// 	$(".contact-page").show();
+	// 	$(".about-page").hide();
+	// 	$(".work-page").hide();		
+	// });
 });
 
