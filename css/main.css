@@ -27,6 +27,12 @@
   src: url('/assets/fonts/Mission Gothic Thin.otf');
 }
 
+@font-face {
+  font-family: "Mission Gothic";
+  font-weight: bold;
+  src: url('/assets/fonts/Mission Gothic Bold.oft');
+}
+
 html, body { height: 100%; }
 
 body {
@@ -88,7 +94,7 @@ p { margin: 1em 0; }
   padding-bottom: 10em;
 }
 
-.about-page p {
+.about-page p, .work-page p, .contact-page p {
   font-family: "Mission Gothic Thin";
   font-size: 20px;
   width: 800px;
@@ -98,4 +104,115 @@ p { margin: 1em 0; }
 
 .about-page h1, .work-page h1, .contact-page h1 {
   margin: 0.5em 0 0.75em;
+}
+
+.applink {
+  text-decoration: none;
+  color: black;
+  font-family: "Mission Gothic";
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px #668375;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: 300px;
+  padding: 21px;
+  text-transform: uppercase;
+  margin-top: 20px;
+ }
+
+
+form {
+  display: block;
+  margin: 0px auto;
+  width: 440px;
+  padding-top: 40px;
+  position: relative;
+}
+
+fieldset {
+  margin: 0px;
+  padding: 1em;
+  border: 1px;
+  outline: 0px;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+input, textarea {
+  transition: all 300ms;
+  width: 400px;
+  padding: 20px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  font: 14px, Arial, sans-serif;
+  color: rgb(153, 153, 153);
+  display: block;
+  margin-top: 20px;
+  box-shadow: rgb(225, 225, 225) 0px 1px 0px 0px inset;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+}
+
+textarea {
+  min-width: 400px;
+  max-width: 400px;
+  overflow: hidden;
+  height: 15px;
+  background-color: white;
+  flex-direction: column;
+  resize: auto;
+  cursor: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+input, input[type="password"], input[type="search"] {
+  background-color: white;
+}
+
+.errormessage {
+  display: block;
+  font: 14px, Arial, sans-serif;
+  color: rgb(153, 153, 153);
+  margin-top: 20px;
+}
+
+form .submit {
+  background: rgb(63, 133, 119);
+  font: 14px, Arial, sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  width: 400px;
+  padding: 21px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  border-bottom: 2px solid rgb(5, 82, 70);
+}
+
+a .submit {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+form div .sucess {
+  border: 1px solid rgb(209, 209, 209);
+  padding-top: 60px;
+  position: absolute;
+  top: 40px;
+  width: 360px;
+  left: 50%;
+  padding-bottom: 50px;
+  margin-left: -180px;
+  opacity: 0;
+  z-index: -1;
 }
