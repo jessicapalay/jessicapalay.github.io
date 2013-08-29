@@ -216,3 +216,23 @@ form div .sucess {
   opacity: 0;
   z-index: -1;
 }
+
+#circle-resting1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 60px 0 0 400px;
+}
+
+#circle-resting2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  margin: 60px 400px 0 0;
+}
